@@ -1,5 +1,6 @@
 Flask==1.0.3
 torchvision==0.2.1
-numpy==1.23.5  # Replace with the installed version
-Pillow==9.4.0  # Replace with the installed version
+numpy==1.23.5
+Pillow==9.4.0
 gunicorn==19.9.0
+Jinja2==2.11.3
