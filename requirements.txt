@@ -1,9 +1,9 @@
-Flask==1.0.3
-markupsafe==2.0.1
-torchvision==0.2.1
-numpy==1.23.5
-Pillow==9.4.0
-gunicorn==19.9.0
+Flask==3.0.2
+markupsafe==2.1.5
+torchvision==0.17.1
+numpy==1.26.4
+Pillow==10.2.0
+gunicorn==21.2.0
 Jinja2==2.11.3
 itsdangerous==2.1.2
 
