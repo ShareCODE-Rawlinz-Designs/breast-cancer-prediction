@@ -18,4 +18,11 @@ def upload_file():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=int(os.environ.get('PORT', 5000)))
+    # Disable debug mode
+    app.debug = False
+    # Get the port from environment variable or default to 5000
+    port = int(os.environ.get('PORT', 5000))
+    # Run the app using Gunicorn as the WSGI server
+    # Use 4 worker processes for handling requests
+    # Use 0.0.0.0 as the host to listen on all public IPs
+    os.system(f"gunicorn -w 4 -b 0.0.0.0:{port} app:app")
