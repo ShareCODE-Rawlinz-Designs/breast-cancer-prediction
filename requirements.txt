@@ -5,3 +5,6 @@ numpy==1.23.5
 Pillow==9.4.0
 gunicorn==19.9.0
 Jinja2==2.11.3
+itsdangerous==2.1.2
+
+
